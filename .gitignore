@@ -1,0 +1,35 @@
+# Jupyter
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Envs
+.venv/
+venv/
+env/
+.conda/
+
+# Editors/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Data & artifacts (adjust to your project)
+data/
+birds_or_not/
+models/
+checkpoints/
+*.pt
+*.pth
+*.onnx
+*.ckpt
+*.log
+
+# Keep env specs
+!environment.yml
+!environment.lock.yml
+!requirements*.txt
