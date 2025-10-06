@@ -20,7 +20,7 @@ Thumbs.db
 
 # Data & artifacts (adjust to your project)
 data/
-birds_or_not/
+bird_or_not/
 models/
 checkpoints/
 *.pt
