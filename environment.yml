@@ -1,59 +1,46 @@
 name: fastai_env
 channels:
+  - pytorch
+  - nvidia
+  - conda-forge
   - defaults
 dependencies:
   - python=3.10.18=h981015d_0
   - ipykernel=6.30.1=py310haa95532_0
+  - torchaudio=2.5.1
   - pytorch-cuda=12.1=hde6ce7c_6
   - pytorch=2.5.1=py3.10_cuda12.1_cudnn9_0
-  - matplotlib=3.10.6=py310haa95532_0
+  - torchvision=0.20.1
   - pillow=11.1.0=py310h096bfcc_0
   - scikit-learn=1.7.1=py310h3fbe716_0
-  - pandas=2.3.2=py310ha5e6156_0
+  - pandas=2.3.3=py310hed136d8_1
   - numpy=2.0.1=py310h055cbcc_1
-  - lxml=6.0.2=py310h4b5876d_0
   - lcms2=2.16=hb4a4139_0
-  - pyqt=6.9.1=py310h12ec796_0
   - cuda-cccl=13.0.85=h5221881_1
   - cuda-cudart=12.1.105=0
   - scipy=1.15.3=py310h180bac5_0
   - nest-asyncio=1.6.0=py310haa95532_0
   - openssl=3.5.4=h725018a_0
   - jupyter_core=5.8.1=py310haa95532_0
-  - qtsvg=6.9.2=h30ace32_1
-  - tomli=2.2.1=py310haa95532_0
   - xz=5.6.4=h4754444_1
   - yaml=0.2.5=he774522_0
   - cuda-runtime=12.1.0=0
   - cuda-nvrtc=12.1.105=0
-  - brotli-python=1.0.9=py310h5da7b33_9
-  - icu=73.1=h6c2663c_0
   - libtiff=4.5.1=hd77b12b_0
-  - libxslt=1.1.43=h25c3957_0
   - markupsafe=3.0.2=py310h827c3e9_0
   - exceptiongroup=1.2.0=py310haa95532_0
   - ca-certificates=2025.10.5=h4c7d964_0
   - jedi=0.19.2=py310haa95532_0
-  - contourpy=1.3.1=py310h214f63a_0
   - libcusparse=12.0.2.55=0
-  - mysql-common=9.3.0=hf582a5b_3
   - bzip2=1.0.8=h2bbff1b_6
   - libcurand-dev=10.4.0.35=hde976d8_1
-  - kiwisolver=1.4.8=py310h5da7b33_0
-  - cycler=0.11.0=pyhd3eb1b0_0
-  - libkrb5=1.21.3=h885b0b7_4
   - jinja2=3.1.6=py310haa95532_0
-  - pcre2=10.42=h0ff8eda_1
-  - libglib=2.84.2=h405b238_0
-  - fonttools=4.59.2=py310h02ab6af_0
-  - libpq=17.4=h4a159e6_2
   - libcufft=11.0.2.4=0
   - python_abi=3.10=2_cp310
   - libnvjpeg=12.1.1.14=0
   - numpy-base=2.0.1=py310h65a83cf_1
   - khronos-opencl-icd-loader=2024.05.08=h8cc25b3_0
   - executing=2.2.1=py310haa95532_0
-  - qtbase=6.9.2=hd965823_1
   - cuda-libraries=12.1.0=0
   - libwebp-base=1.3.2=h3d04722_1
   - brotlicffi=1.0.9.2=py310h5da7b33_1
@@ -63,24 +50,19 @@ dependencies:
   - mkl-service=2.4.0=py310h827c3e9_2
   - libffi=3.4.4=hd77b12b_1
   - jpeg=9f=ha349fce_0
-  - mkl=2023.1.0=h6b88ed4_46358
-  - qtwebchannel=6.9.2=heb02b0b_1
+  - mkl=2023.1.0=h6a75c08_48682
   - libnpp-dev=12.0.2.50=0
-  - unicodedata2=15.1.0=py310h827c3e9_1
   - libcusolver=11.4.4.55=0
   - charset-normalizer=3.3.2=pyhd3eb1b0_0
   - cffi=1.17.1=py310h827c3e9_1
   - pure_eval=0.2.3=py310haa95532_0
   - libcusparse-dev=12.0.2.55=0
   - cuda-opencl=13.0.85=h17533db_0
-  - pixman=0.46.4=h4043f72_0
   - pygments=2.19.1=py310haa95532_0
-  - gmp=6.3.0=h537511b_0
-  - qtwebsockets=6.9.2=heb02b0b_1
   - cuda-cudart-dev=12.1.105=0
   - networkx=3.4.2=py310haa95532_0
   - cuda-libraries-dev=12.1.0=0
-  - pyyaml=6.0.2=py310h827c3e9_0
+  - pyyaml=6.0.2=py310h38315fa_2
   - bottleneck=1.4.2=py310hc99e966_0
   - requests=2.32.5=py310haa95532_0
   - icc_rt=2022.1.0=h6049295_2
@@ -89,7 +71,6 @@ dependencies:
   - blas=1.0=mkl
   - python-tzdata=2025.2=pyhd3eb1b0_0
   - tk=8.6.15=hf199647_0
-  - pyparsing=3.2.0=py310haa95532_0
   - libdeflate=1.17=h2bbff1b_1
   - libnpp=12.0.2.50=0
   - libcublas=12.1.0.26=0
@@ -97,53 +78,45 @@ dependencies:
   - threadpoolctl=3.5.0=py310h9909e9c_0
   - libnvjitlink=12.1.105=0
   - cuda-opencl-dev=13.0.85=hde976d8_0
-  - cairo=1.18.4=he9e932c_0
-  - gmpy2=2.2.1=py310h827c3e9_0
   - wcwidth=0.2.13=py310haa95532_0
   - prompt-toolkit=3.0.43=py310haa95532_0
   - pysocks=1.7.1=py310haa95532_0
-  - packaging=25.0=py310haa95532_0
+  - packaging=25.0=pyh29332c3_1
   - six=1.17.0=py310haa95532_0
   - zeromq=4.3.5=h6c54ac7_1
   - openjpeg=2.5.2=hae555c5_0
   - pyzmq=27.1.0=py310h7149c55_0
-  - jupyter_client=8.6.3=py310haa95532_0
+  - jupyter_client=8.6.3=pyhd8ed1ab_1
   - cuda-version=13.0=3
   - libsodium=1.0.20=h83e8143_0
   - comm=0.2.1=py310haa95532_0
-  - psutil=7.0.0=py310h02ab6af_0
-  - colorama=0.4.6=py310haa95532_0
-  - mpmath=1.3.0=py310haa95532_0
+  - psutil=7.0.0=py310h29418f3_1
+  - colorama=0.4.6=pyhd8ed1ab_1
   - idna=3.7=py310haa95532_0
   - vc=14.3=h2df5915_10
-  - matplotlib-base=3.10.6=py310h43afe63_0
   - parso=0.8.4=py310haa95532_0
-  - ucrt=10.0.22621.0=haa95532_0
+  - ucrt=10.0.26100.0=h57928b3_0
   - cuda-cccl_win-64=13.0.85=hc667259_1
   - win_inet_pton=1.1.0=py310haa95532_0
   - wheel=0.45.1=py310haa95532_0
   - cuda-profiler-api=13.0.85=h5221881_0
   - libcublas-dev=12.1.0.26=0
   - tzdata=2025b=h04d1e81_0
-  - vc14_runtime=14.44.35208=h4927774_10
+  - vc14_runtime=14.44.35208=h818238b_31
   - zstd=1.5.7=h56299aa_0
   - libnvjpeg-dev=12.1.1.14=0
   - stack_data=0.6.3=py310haa95532_0
-  - sqlite=3.50.2=hda9a48d_1
-  - libxml2=2.13.8=h866ff63_0
-  - mpfr=4.2.1=h56c3642_0
+  - sqlite=3.50.4=hdb435a2_0
   - numexpr=2.11.0=py310hdb065b2_0
   - libcurand=10.4.0.35=h86a452a_1
   - mkl_fft=1.3.11=py310h827c3e9_0
   - platformdirs=4.3.7=py310haa95532_0
-  - harfbuzz=10.2.0=he2f9f60_1
   - libnvjitlink-dev=12.1.105=0
   - typing_extensions=4.15.0=py310haa95532_0
   - intel-openmp=2023.1.0=h59b6b97_46320
   - matplotlib-inline=0.1.7=py310haa95532_0
   - tbb=2021.8.0=h59b6b97_0
   - pytz=2025.2=py310haa95532_0
-  - qttools=6.9.2=h7e7b719_1
   - pycparser=2.23=py310haa95532_0
   - cuda-nvtx=12.1.105=0
   - urllib3=2.5.0=py310haa95532_0
@@ -154,38 +127,42 @@ dependencies:
   - mkl_random=1.2.8=py310hc64d2fc_0
   - joblib=1.5.2=py310haa95532_0
   - lz4-c=1.9.4=h2bbff1b_1
-  - vs2015_runtime=14.44.35208=ha6b5a95_10
-  - zlib=1.3.1=h02ab6af_0
-  - libzlib=1.3.1=h02ab6af_0
+  - vs2015_runtime=14.44.35208=h38c0c73_31
+  - zlib=1.3.1=h2466b09_2
+  - libzlib=1.3.1=h2466b09_2
   - debugpy=1.8.16=py310h885b0b7_0
-  - pyqt6-sip=13.10.2=py310h630b2a1_0
-  - traitlets=5.14.3=py310haa95532_0
+  - traitlets=5.14.3=pyhd8ed1ab_1
   - libwebp=1.3.2=hbc33d0d_0
-  - mpc=1.3.1=h827c3e9_0
   - lerc=3.0=hd77b12b_0
-  - freetype=2.13.3=h0620614_0
   - filelock=3.17.0=py310haa95532_0
   - prompt_toolkit=3.0.43=hd3eb1b0_0
   - asttokens=3.0.0=py310haa95532_0
   - pip=25.2=pyhc872135_0
-  - pip:
-      - fastai==2.7.19
-      - ddgs==9.6.0
-      - duckduckgo-search==8.1.1
-      - h2==4.3.0
-      - ipykernel==6.30.1
-      - imagehash==4.3.2
-      - pillow-avif-plugin==1.5.2
   - libcusolver-dev=11.4.4.55=0
-  - graphite2=1.3.14=hd77b12b_1
   - cuda-cupti=12.1.105=0
-  - libiconv=1.16=h2bbff1b_3
-  - sip=6.12.0=py310h706e071_0
   - pytorch-mutex=1.0=cuda
-  - qtdeclarative=6.9.2=h88b4c33_1
-  - fontconfig=2.15.0=hd211d86_0
-  - mysql-libs=9.3.0=hc0ebf12_3
   - python-dateutil=2.9.0post0=py310haa95532_2
   - libjpeg-turbo=2.0.0=h196d8e1_0
   - ipython=8.30.0=py310haa95532_0
   - giflib=5.2.2=h7edc060_0
+  - libsqlite=3.50.4=hf5d6505_0
+  - m2w64-gcc-libs-core=5.3.0=7
+  - m2w64-gcc-libgfortran=5.3.0=6
+  - zipp=3.23.0=pyhd8ed1ab_0
+  - importlib-metadata=8.7.0=pyhe01879c_1
+  - vcomp14=14.44.35208=h818238b_31
+  - xorg-libxdmcp=1.1.3=hcd874cb_0
+  - pthread-stubs=0.4=hcd874cb_1001
+  - libxcb=1.13=hcd874cb_1004
+  - m2w64-libwinpthread-git=5.0.0.4634.697f757=2
+  - xorg-libxau=1.0.11=hcd874cb_0
+  - m2w64-gmp=6.1.0=2
+  - m2w64-gcc-libs=5.3.0=7
+  - msys2-conda-epoch=20160418=1
+  - freetype=2.12.1=hdaf720e_2
+  - pip:
+      - fastai==2.7.19
+      - fastcore==1.7.29
+      - nbdev==2.3.35
+      - ghapi==1.0.8
+      - fastbook==0.0.29

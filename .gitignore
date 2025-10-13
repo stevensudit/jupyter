@@ -29,6 +29,22 @@ checkpoints/
 *.ckpt
 *.log
 
+.gitattributes
+fastbook/models/
+fastbook/tmp/
+fastbook/images/
+*.bak
+*.pkl
+fastbook/bears/
+__pycache__/
+.last_checked
+.gitconfig
+.ipynb_checkpoints/
+models/
+tmp/
+bears/
+images/
+
 # Keep env specs
 !environment.yml
 !environment.lock.yml
